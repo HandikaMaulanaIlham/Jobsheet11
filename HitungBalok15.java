@@ -9,6 +9,9 @@ public class HitungBalok15 {
         int volume = hitungLuas(a, b) * tinggi;
         return volume;
     }
+    static int hitungLuasPermukaanBalok(int p, int l, int t) {
+        return 2 * (hitungLuas(p, l) + hitungLuas(p, t) + hitungLuas(l, t));
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
